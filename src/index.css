@@ -1,0 +1,50 @@
+body {
+  background-image: url('components/images/background-pattern-desktop.svg');
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  font-family: 'Work Sans';
+}
+
+h1 {
+  padding-left: 1rem;
+}
+
+.container {
+  display: flex;
+  
+}
+
+.MuiPaper-elevation{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 301px) and (max-width: 600px) {
+  body {
+    background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+    background-image: url('components/images/background-pattern-mobile.svg');
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+    background-image: url('components/images/background-pattern-desktop.svg');
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+    background-image: url('components/images/background-pattern-desktop.svg');
+  }
+}
