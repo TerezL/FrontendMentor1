@@ -4,7 +4,6 @@ import Star from "./images/icon-star.svg";
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Plus from "./images/icon-plus.svg";
 import Minus from "./images/icon-minus.svg";
 
@@ -23,8 +22,8 @@ const CustomExpandIcon = () => {
           }
         }}
       >
-        <div className="expandIconWrapper"><img src={Minus}/></div>
-        <div className="collapsIconWrapper"><img src={Plus}/></div>
+        <div className="expandIconWrapper"><img src={Minus} alt='minus' /></div>
+        <div className="collapsIconWrapper"><img src={Plus} alt='plus' /></div>
       </Box>
     );
   };
@@ -49,8 +48,9 @@ function Card() {
   maxWidth:"40vw",
         backgroundColor:"hsl(0, 0%, 100%)", padding: "2rem"
       }}>
+      <main>
       <div class="container">
-       <img src={Star}/><h1>FAQs</h1>
+       <img src={Star} alt='star'/><h1>FAQs</h1>
        </div>
         <Accordion>
         <AccordionSummary
@@ -128,9 +128,11 @@ function Card() {
         There's a help channel where you can ask questions and seek support from other community members.
         </AccordionDetails>
       </Accordion>
+     </main>
     </Box>
     
     </div>
+    
   );
 }
 
